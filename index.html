@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <!-- Без этой строки на телефоне страница будет мелкой, как на компьютере -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Надпись дня</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- PWA: «паспорт» приложения для Android/Chrome -->
+  <link rel="manifest" href="manifest.json">
+  <!-- Цвет строки состояния/панели браузера на телефоне -->
+  <meta name="theme-color" content="#f4a6b8">
+
+  <!-- iOS (Safari) почти не читает manifest, ему нужны свои теги -->
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Надпись">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+</head>
+<body>
+  <main class="card">
+    <p class="date" id="date"></p>
+    <!-- Сюда JavaScript вставит текст надписи -->
+    <blockquote class="quote" id="quote">Загрузка…</blockquote>
+  </main>
+
+  <!-- defer = «запусти скрипт, когда HTML полностью загрузится» -->
+  <script src="app.js" defer></script>
+</body>
+</html>
