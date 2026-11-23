@@ -1,6 +1,6 @@
 {
-  "name": "Надпись дня",
-  "short_name": "Надпись",
+  "name": "Hope Quote",
+  "short_name": "Quote",
   "description": "Каждый день — одна мотивационная надпись, одинаковая для всех друзей.",
   "lang": "ru",
   "start_url": "./",
