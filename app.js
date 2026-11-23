@@ -30,9 +30,12 @@ async function showQuoteOfTheDay() {
       year: "numeric",
     });
   } catch (error) {
-    quoteEl.textContent = "Не удалось загрузить надпись 😔";
-    console.error(error);
+    quoteEl.textContent = "Не удалось загрузить надпись :((";
+    console.error(error);   
   }
 }
 
 showQuoteOfTheDay();
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js");
+}
